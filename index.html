@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css">
     <title>Prework Study Guide</title>
   </head>
   <body>
@@ -19,7 +20,7 @@
            <li>Elements that are nested inside other elements are called child elements. If there are three elements nested inside of a &lt;body&gt; element, those three nested elements are known as child elements.</li>
            <li>The element that holds all the children elements is known as a parent element.</li>
            <li>Types of elements:</li>
-            <ul>
+          <ul>
             <li>Text elements</li>
             <li>Image elements</li>
             <li>Header elements</li>
@@ -27,14 +28,14 @@
             <li>Meta-related elements</li>
             <li>Content division elements</li>
             <li>Semantic elements</li>
-           </ul> 
+          </ul> 
            
            <li>Preceding HTML code is a declaration &lt;!DOCTYPE html&gt; Declarations are NOT case-sensitive. Declaration tells the browser what document type to expect when it is opened.</li>
            <li>The HTML attribute &lt;html lang="en"&gt; tells the browser what language for the webpage.</li>
            <li>HTML attributes are always defined in the beginning element, never the closing element.</li>
            <li>The &lt;head&gt; element contains metadata information about the webpage.</li>
            <li>The &lt;meta&gt; element defines metadata such as the character set, description, keywords, author, and viewport.</li>
-           <ul>
+          <ul>
             <li>The meta element &lt;meta charset="UTF-8"&gt; defines the character set as UTF-8 which allows us to use most characters and symbols on the page.</li>
             <li>The meta element &lt;http-equiv&gt; element sets an HTTP header for content.
             <li>The meta element &lt;viewport&gt; element sets the default view of our webpage.</li>
@@ -51,7 +52,30 @@
       <section class="card" id="css-section">
         <h2>CSS</h2>
         <ul>
-          <li>Enter your CSS notes here</li>
+           <li>Inline CSS apply styles directly in the HTML file to specific HTML tag using a style attribute with a CSS rule to style a particular page element only.</li>
+          <ul>
+            <li>Example:&lt;h1 style="color:red;"&gt;Prework Study Guide&lt;/h1&gt; This changes a single heading to red.</li>
+          </ul>
+           <li>Internal Style Sheet contains CSS rules for the webpage in the head section of the HTML file. Rules only apply to that page and you can configure CSS classes and IDs.</li>
+           <li>Most common is External CSS style sheet. This is prefered because it allows developer to keep all their CSS rules in a seperate file to make changes easier.</li>
+           <li>The &lt;link&gt; element creates the connection to the exernal file.</li>
+           <li>To link an external CSS sheet add &lt;link rel="stylesheet" href="./assets/style.css"&gt; element after the final meta element and before title element.</li>
+          <ul>
+            <li>The rel attribute specifies the relation ship between the current ocument and the linked document resource.</li>
+            <li>The href attribute specifies the location URL of the external resource. This href attribute is using a relative path. This means the location is dervied from the current location (index.html). We must lookin the assets folder to locate.</li>
+          </ul>
+           <li>CSS box model refers to each HTML element is essentially a box. Each box consists of margins outside, padding and content.</li>
+          <ul>
+            <li>A margin indicates how much space we want around the outside of an element.</li>
+            <li>A padding indicates how much space we want around the content inside an element.</li>
+          </ul>
+           <li>To help us write Do Not Repeat Yourself (DRY) code. We can combine two selectors into a single CSS rule with a comma allowing the declarations to affect both selectors.</li>
+           <li>The text-align is a way to center a title or heading on a webpage</li>
+           <li>The &lt;img&gt; selector assigns property values to any image element in the markup.</li>
+           <li>The .card selector contains width, margin, border and box-shadow properties.</li>
+           <li>The period preceding card designates this as a class selector. Any HTML element assigned to the class with gain these property assignments.</li>
+           <li>Assigning colors in CSS can be done by semantic references such as gray or blue.</li>
+           <li>Color can also be added by its hexadecimal code or hex #.</li>
         </ul>
       </section>
    
