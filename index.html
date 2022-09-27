@@ -30,7 +30,6 @@
             <li>Content division elements</li>
             <li>Semantic elements</li>
           </ul> 
-           
            <li>Preceding HTML code is a declaration &lt;!DOCTYPE html&gt; Declarations are NOT case-sensitive. Declaration tells the browser what document type to expect when it is opened.</li>
            <li>The HTML attribute &lt;html lang="en"&gt; tells the browser what language for the webpage.</li>
            <li>HTML attributes are always defined in the beginning element, never the closing element.</li>
@@ -42,7 +41,13 @@
             <li>The meta element &lt;viewport&gt; element sets the default view of our webpage.</li>
             <li>The &lt;title&gt; element defines the title for a webpage. It is required and extremely important for Search Engine Optimization (SEO).</li>
           </ul>
-           <li>The &lt;body&gt; element represents the visible content shown to the user. It is an example of a Semantic HTML element.</li>
+           <li>The &lt;body&gt; represents the visible content shown to the user. It is an example of a Semantic HTML element.</li>
+           <li>Use &lt;h1&gt; headings in order from &lt;h1&gt; to &lt;h6&gt;</li>
+           <li>The &lt;p&gt; represents a paragraph or block of text.</li>
+           <li>The &lt;ul&gt;, &lt;ol&gt;, &lt;li&gt; elements represent unordered lists, ordered lists, and list items.</li>
+           <li>The &lt;img&gt; element contains information about images that are displayed on the webpage. &lt;src&gt; defines the image location</li>
+           <li>The &lt;br&gt; element creates a line break or empty space.</li>
+           <li>The &lt;a&gt; stands for anchor and creates links to the same webpage or other pages.</li>
            <li>The &lt;style&gt; element defines the CSS styles associated with a website.</li>
            <li>The &lt;base&gt; element defines the base URL for a webpage.</li>
            <li>The &lt;link&gt; element connects an external resource to the HTML document.</li>
@@ -83,19 +88,59 @@
       <section class="card" id="git-section">
         <h2>Git</h2>
         <ul>
-          <li>git status: checks what branch we are currently on.</li>
-          <li>git checkout main: takes you to main branch.</li>
-          <li>git checkout -b branch-name: creates a new branch and switches to it.</li>
-          <li>git pull origin main: syncs your local and remote branches.</li>
-          <li>git push origin branch-name: sends your changes to github branch.</li>
-          <li>touch script.js or style.css will create a new file in the current folder.</li>
+           <li>Git is a version control system that lets you manage and keep track of each version of your project.</li>
+           <li>GitHub is a cloud-based hosting service that allows us to keep track of our projects inside repositories that are stored remotely.</li>
+           <li>cd: change directory, navigates through the directory
+           <li>cd ..: navigates backwards through the directory one level at a time</li>
+           <li>ls: displays a list of files and folders in current directory</li>
+           <li>pwd: displays the current working directory</li>
+           <li>mkdir: make directory, creates a new directory</li>
+           <li>start: opens a file Ex: start first-day.txt</li>
+           <li>git status: checks what branch we are currently on</li>
+           <li>git checkout main: takes you to main branch</li>
+           <li>git checkout -b branch-name: creates a new branch and switches to it</li>
+           <li>git add -A: will add all changes to next push</li>
+           <li>git commit -m "your message here": adds a message to describe the changes you made during coding session.</li>
+           <li>git pull origin main: syncs your local and remote branches</li>
+           <li>git push origin branch-name: sends your changes to github branch</li>
+           <li>touch file.name: will create a new file in the current folder</li>
+           <li>start file.name: opens file</li>
         </ul>
       </section>
    
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
         <ul>
-          <li>Enter your JavaScript notes here</li>
+           <li>You link the .js file under the &lt;footer&gt; element within the &lt;body&gt; on the html page.</li>
+        <ul>
+           <li> Ex: &lt;script src="./assets/script.js"&gt;&lt;/script&gt;</li>
+        </ul>
+           <li>Control flow is the order in which a computer executes code in a script. JavaScript is read from top to bottom.</li>
+           <li>Each line of code ends with a semicolon.</li>
+           <li>Strings are contained in quotation marks.</li>
+           <li>A variable (var) is a named container that allows us to store data in our code. After the var keyword we give the variable a name.</li>
+        <ul>
+           <li>Ex: var shape</li>
+        </ul>
+           <li>= is an assignment operator to assign specific data we store in our variable.</li>
+        <ul>
+           <li>Ex: var shape = "circle";</li>
+        </ul>
+           <li>An Array is a single variable that is used to hold a group of data. Data is typically related in some way.</li>
+        <ul>
+           <li>Ex: var shapes = ["triangle", "square", "pentagon", "circle"];</li>
+        </ul>
+           <li>Another Array example: var studentInfo = ["Lu", 54, true];</li>
+        <ul>
+            <li>Only student name is in quotations because it is a string</li>
+            <li>54 is a number and does not need quotations</li>
+            <li>true is a Boolean value, no quotations needed.</li>
+        </ul>
+
+           <li>if and else if statements are a way of creating a conditional statement in JavaScript.</li>
+           <li>A value is considered falsy if it is one of the following values: 0, -0, On, "", null, undefined, NaN or a Boolean data type with false value.</li>
+           <li>A value is considered truthy if all other values including Boolean are true.</li>
+           <li>for loop uses the predictable pattern of indices to perform a task on all the items in an array by allowing a single code block to be executed over and over.</li>
         </ul>
    
       </section>
